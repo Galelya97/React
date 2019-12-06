@@ -1,26 +1,38 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import Person, { IPerson } from "./person/Person";
 
 const App: React.FC = () => {
+  const [persons, setЗersons] = useState<IPerson[]>([
+    { id: 0, title: "Галя", description: "adsadsadsadas" },
+    { id: 1, title: "Никита", description: "adsadsadsadas" },
+    { id: 2, title: "Лёха", description: "adsadsadsadas" },
+    { id: 2, title: "Аня", description: "adsadsadsadas" }
+  ]);
+
+  setTimeout(() => {
+    setЗersons([
+      { id: 0, title: "Галя", description: "adsadsadsadas" },
+      { id: 5, title: "Вова", description: "adsadsadsadas" },
+      { id: 2, title: "Лёха", description: "adsadsadsadas" }
+    ]);
+  }, 3000);
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Learn React</h1>
+        <div className="row">
+          {persons.map(person => (
+            <Person key={person.id} person={person} />
+          ))}
+        </div>
       </header>
     </div>
   );
-}
+};
 
 export default App;
