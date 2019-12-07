@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import styles from "./style.module.scss";
+import CustomButton from "../custom-button/CustomButton";
 
 export interface IPerson {
     id: number;
@@ -20,13 +21,9 @@ const Person: React.FC<{ person: IPerson }> = ({ person }) => {
 
   return (
     <div className={`${styles.card} ${flag ? styles.cliced : ''}`}>
-      <h3 onClick={handleClick}>{person.title}</h3>
-        <span>{styles.row}</span>
-      <br />
+      <h3>{person.title}</h3>
       <p>{person.description}</p>
-        <button onClick={handleClick2}>
-            Klick
-        </button>
+       <CustomButton children="Klick" onClick={handleClick}/>
     </div>
   );
 };

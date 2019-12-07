@@ -3,15 +3,15 @@ import "./App.css";
 import Person, { IPerson } from "./person/Person";
 
 const App: React.FC = () => {
-  const [persons, setЗersons] = useState<IPerson[]>([
+  const [persons, setPersons] = useState<IPerson[]>([
     { id: 0, title: "Галя", description: "adsadsadsadas" },
     { id: 1, title: "Никита", description: "adsadsadsadas" },
     { id: 2, title: "Лёха", description: "adsadsadsadas" },
-    { id: 2, title: "Аня", description: "adsadsadsadas" }
+    { id: 3, title: "Аня", description: "adsadsadsadas" }
   ]);
 
   setTimeout(() => {
-    setЗersons([
+    setPersons([
       { id: 0, title: "Галя", description: "adsadsadsadas" },
       { id: 5, title: "Вова", description: "adsadsadsadas" },
       { id: 2, title: "Лёха", description: "adsadsadsadas" }

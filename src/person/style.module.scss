@@ -6,7 +6,6 @@
   padding: 50px;
   margin: 20px;
   background-color: #118dff;
-  cursor: pointer;
   transition: 500ms ease-in-out;
   box-shadow: 0 0 0 0 white;
   border-radius: 10px;
@@ -16,10 +15,6 @@
 .cliced {
   transform: translateY(-20px);
   box-shadow: 0 10px 10px 0 white;
-
-  .row {
-    display: block;
-  }
 }
 
 @keyframes asdfg {
