@@ -1,0 +1,87 @@
+.Header {
+  position: sticky;
+  width: 100%;
+  opacity: 0.5;
+  transition: 500ms ease-in-out;
+  transform: translateY(-50%);
+
+  &:hover {
+    opacity: 1;
+    transform: translateY(0);
+
+    .arrow {
+      opacity: 0;
+    }
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .Link {
+      flex: 1;
+      cursor: pointer;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: white;
+      height: 50px;
+
+      span {
+        opacity: 0.5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        background-color: #38373c;
+        transform: translateY(-50%);
+        transition: 500ms ease-in-out;
+      }
+    }
+    .Link:hover {
+      span {
+        transform: translateY(0);
+        opacity: 1;
+        box-shadow: 0 0 10px 0 black;
+      }
+    }
+  }
+
+  .arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 20px;
+    bottom: -50%;
+    font-weight: bold;
+    font-size: 26px;
+    animation: bounce 5s infinite;
+    background-color: lightgray;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  80% {
+    transform: translateY(0);
+  }
+  85% {
+    transform: translateY(-25%);
+  }
+  90% {
+    transform: translateY(0);
+  }
+  95% {
+    transform: translateY(-25%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

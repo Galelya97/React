@@ -1,14 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
 import s from "./style.module.scss";
-import Header from "../header/Header";
-import Main from "../main/Main";
+import Header from "../components/header/Header";
+import Main from "../components/main/Main";
+import Sidebar from "../components/sidebar/Sidebar";
 
 const App: React.FC = () => {
-
   return (
     <div className={s.App}>
-      <Header />
-      <Main />
+      <Sidebar />
+      <div className={s.Content}>
+        <Header />
+        <Main />
+      </div>
     </div>
   );
 };
