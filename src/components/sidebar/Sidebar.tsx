@@ -18,8 +18,8 @@ const Sidebar: React.FC<Props> = () => {
           <span className={s.position}>Middle web developer</span>
         </div>
       </div>
-      <img src={avatar} alt="avatar" />
-      <div className={s.wrapper}>
+      <div className={s.img} />
+      <div className={s.wrapper + ' ' + s.content}>
         <PanelMini title="profile">
             <span>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis
