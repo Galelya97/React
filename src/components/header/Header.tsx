@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowUp } from "mdi-material-ui";
+import { Menu } from "mdi-material-ui";
 import s from "./style.module.scss";
 import { Link } from "react-router-dom";
 import links from "../../links";
@@ -17,7 +17,7 @@ const Header: React.FC<Props> = () => {
         ))}
       </nav>
       <div className={s.arrow}>
-        <ArrowUp />
+        <Menu />
       </div>
     </header>
   );

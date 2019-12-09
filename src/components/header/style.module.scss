@@ -1,13 +1,11 @@
 .Header {
   position: sticky;
   width: 100%;
-  opacity: 0.5;
-  transition: 500ms ease-in-out;
-  transform: translateY(-50%);
 
   &:hover {
-    opacity: 1;
-    transform: translateY(0);
+    nav {
+      transform: translateY(0);
+    }
 
     .arrow {
       opacity: 0;
@@ -18,6 +16,8 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    transform: translateY(-75%);
+    transition: 500ms ease-in-out;
 
     .Link {
       flex: 1;
@@ -35,7 +35,7 @@
         width: 100%;
         height: 100%;
         background-color: #38373c;
-        transform: translateY(-50%);
+        transform: translateY(-25%);
         transition: 500ms ease-in-out;
       }
     }
@@ -57,11 +57,13 @@
     bottom: -50%;
     font-weight: bold;
     font-size: 26px;
-    animation: bounce 5s infinite;
-    background-color: lightgray;
+    //animation: bounce 5s infinite;
+    //background-color: lightgray;
     border-radius: 50%;
     height: 30px;
     width: 30px;
+    color: #38373c;
+    opacity: 1;
   }
 }
 
@@ -73,13 +75,13 @@
     transform: translateY(0);
   }
   85% {
-    transform: translateY(-25%);
+    transform: translateY(-50%);
   }
   90% {
     transform: translateY(0);
   }
   95% {
-    transform: translateY(-25%);
+    transform: translateY(-50%);
   }
   100% {
     transform: translateY(0);
