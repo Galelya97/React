@@ -1,0 +1,38 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  color: var(--ACCENT-COLOR);
+}
+
+.progress {
+  align-self: stretch;
+  min-width: 100px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: var(--SECOND-COLOR);
+  overflow: hidden;
+}
+
+.result {
+  display: block;
+  height: 100%;
+
+  .full {
+    display: block;
+    background-color: var(--ACCENT-COLOR);
+    height: 100%;
+    width: 100%;
+    animation: full 1s ease-in-out;
+  }
+}
+
+@keyframes full {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}

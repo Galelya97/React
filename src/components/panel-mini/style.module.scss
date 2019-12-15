@@ -4,19 +4,18 @@
   flex-direction: column;
   align-items: stretch;
   .title {
-    color: #3a8aa3;
+    color: var(--ACCENT-COLOR);
     text-transform: uppercase;
     font-weight: bold;
   }
   .line {
     border-top: 1px solid #39383e;
-    border-left: 30px solid #3a8aa3;
-    border-bottom: 1px solid #646369;
+    border-left: 30px solid var(--ACCENT-COLOR);
+    border-bottom: 1px solid var(--SECOND-COLOR);
     margin-bottom: 20px;
   }
 
   .info {
-    color: #b1b0b6;
     display: flex;
     align-items: stretch;
     flex-direction: column;

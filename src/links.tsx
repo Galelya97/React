@@ -1,7 +1,8 @@
 import React from "react";
-import About from "./pages/about/About";
-import Projects from "./pages/projects/Projects";
-import Skills from "./pages/skills/Skills";
+
+const About = React.lazy(() => import("./pages/about/About"));
+const Projects = React.lazy(() => import("./pages/projects/Projects"));
+const Skills = React.lazy(() => import("./pages/skills/Skills"));
 
 const links = [
   {

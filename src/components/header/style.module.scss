@@ -34,7 +34,7 @@
         justify-content: center;
         width: 100%;
         height: 100%;
-        background-color: #38373c;
+        background-color: var(--MAIN-COLOR);
         transform: translateY(-25%);
         transition: 500ms ease-in-out;
       }
@@ -62,7 +62,7 @@
     border-radius: 50%;
     height: 30px;
     width: 30px;
-    color: #38373c;
+    color: var(--MAIN-COLOR);
     opacity: 1;
   }
 }

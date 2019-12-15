@@ -1,12 +1,17 @@
 body {
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
+  --MAIN-COLOR: #38373c;
+  --SECOND-COLOR: #a3a2a8;
+  --ACCENT-COLOR: #3a8aa3;
+  --TEXT-COLOR: white;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: var(--TEXT-COLOR);
 }
 
 a {
@@ -16,4 +21,9 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+h1 {
+  text-transform: uppercase;
+  color: var(--MAIN-COLOR);
 }

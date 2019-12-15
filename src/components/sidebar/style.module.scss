@@ -1,6 +1,6 @@
 .SideBar {
   width: 300px;
-  background-color: #38373c;
+  background-color: var(--MAIN-COLOR);
   box-shadow: 0 0 20px -4px black;
   z-index: 10;
 
@@ -10,7 +10,7 @@
     width: 300px;
     height: 500px;
     object-position: 0 -10px;
-    background-image: linear-gradient(to bottom, transparent 0%, transparent 30%, rgba(56, 55, 60, 0.8) 60%, #38373c 100%), url("../../imgs/avatar.jpg");
+    background-image: linear-gradient(to bottom, transparent 0%, transparent 30%, rgba(56, 55, 60, 0.8) 60%, var(--MAIN-COLOR) 100%), url("../../imgs/avatar.jpg");
       background-size: cover;
   }
 }
